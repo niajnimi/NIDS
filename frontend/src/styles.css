@@ -1,0 +1,44 @@
+:root { color-scheme: dark; font-family: "JetBrains Mono", monospace; }
+body { margin: 0; background: #0a0f1e; color: #f5f7ff; }
+.app { min-height: 100vh; padding: 10px; }
+.header { display: grid; grid-template-columns: 1.8fr 0.8fr 0.9fr 0.8fr 0.9fr auto auto; gap: 10px; align-items: center; background: #121a2f; padding: 10px; border: 1px solid #1d2a4a; }
+.brand { color: #00d4ff; display: flex; align-items: center; gap: 8px; font-weight: 700; }
+.btn { padding: 8px; border: 0; font-weight: 700; color: #fff; cursor: pointer; }
+.btn.start { background: #00a651; }
+.btn.stop { background: #4b5563; }
+.icon-btn { background: #1f2a44; color: white; border: 0; padding: 8px; cursor: pointer; }
+.bell { position: relative; }
+.bell span { position: absolute; top: -8px; right: -8px; background: #ff1744; border-radius: 999px; padding: 2px 6px; font-size: 10px; }
+.layout { display: grid; grid-template-columns: 30% 70%; gap: 10px; margin-top: 10px; }
+.p1, .p2, .p3, .p4, .p5 { background: #111827; border: 1px solid #1f2a44; }
+.p3 { grid-column: 1 / 3; }
+.p4, .p5 { min-height: 290px; }
+.cards-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 8px; }
+.card { background: #0b1326; border: 1px solid #1f2a44; padding: 10px; }
+.card .label { color: #8aa2cc; font-size: 12px; }
+.card .value { color: #00ff88; font-size: 22px; font-weight: bold; }
+.top-sources { padding: 10px; }
+.source-row { display: grid; grid-template-columns: 1.5fr 0.7fr 1fr; gap: 8px; margin-bottom: 6px; align-items: center; }
+.spark { background: #0b1326; height: 8px; }
+.spark div { background: #00d4ff; height: 8px; }
+.graph-pane, .packet-pane, .alerts-pane, .logs-pane { padding: 10px; }
+.timeline { display: flex; gap: 2px; }
+.timeline span { display: inline-block; width: 4px; height: 14px; }
+.filter-bar { display: flex; gap: 6px; margin-bottom: 8px; flex-wrap: wrap; }
+.row { display: grid; grid-template-columns: 0.4fr 0.8fr 0.7fr 1.2fr 1.2fr 0.6fr 0.5fr 0.5fr 0.8fr; gap: 8px; font-size: 12px; align-items: center; padding: 4px 8px; }
+.table-header { border-bottom: 1px solid #233254; color: #8aa2cc; }
+.row.failed { background: rgba(255, 23, 68, 0.22); }
+.row.icmp { background: rgba(0, 212, 255, 0.14); }
+.alert-card { background: #0b1326; border: 1px solid #1f2a44; margin-bottom: 8px; padding: 8px; }
+.badge { padding: 2px 8px; border-radius: 999px; font-size: 11px; margin-right: 6px; }
+.badge.low { background: #ffe066; color: #111; }
+.badge.medium { background: #ff922b; color: #111; }
+.badge.high { background: #ff4d4f; }
+.badge.critical { background: #ff1744; box-shadow: 0 0 8px #ff1744; animation: pulse 1s infinite; }
+@keyframes pulse { 0%{opacity:1}50%{opacity:.45}100%{opacity:1} }
+.tabs { display: flex; gap: 8px; margin-bottom: 8px; }
+.tabs button, .export button { background: #1f2a44; color: white; border: 0; padding: 6px 10px; cursor: pointer; margin-right: 6px; margin-bottom: 6px; }
+.simple-table { max-height: 220px; overflow: auto; font-size: 12px; }
+.modal { position: fixed; inset: 0; background: rgba(0,0,0,.7); display: grid; place-items: center; }
+.modal-card { width: 600px; max-height: 80vh; overflow: auto; background: #0f172a; border: 1px solid #334155; padding: 12px; display: grid; gap: 8px; }
+.modal-card label { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
